@@ -43,14 +43,6 @@ At this monitor scale (1.5B parameters), the channel is not real. Either the in-
 - `pilot.py`: full pilot script. Loads malicious commands from a prior attack run, scores each in three conditions, saves per-item results.
 - `results.json`: per-condition means, medians, deltas, and per-item scores for all 43 commands.
 
-## How to Run
-
-```bash
-pip install torch transformers numpy
-python pilot.py
-```
-
-The script needs a CUDA GPU (runs in around 5 minutes). It expects a JSON file of malicious commands to score. The expected location is hard-coded in the script; modify or replace as needed.
 
 ## What This Pilot Implies for the Full Project
 
