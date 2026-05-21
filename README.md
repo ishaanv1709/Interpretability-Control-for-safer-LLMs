@@ -2,8 +2,6 @@
 
 A small pilot probing whether distress-flavored language emitted by an untrusted policy can subvert an LLM monitor's suspicion scores in an AI control protocol.
 
-This is the first experiment for **Project 6: Can distress appeals subvert LLM monitors in AI control protocols?**, a proposed research direction in mechanistic interpretability and AI control. The pilot is intentionally small. Its job is to give a first signal that informs the full experimental plan.
-
 ## Question
 
 Standard AI control protocols use an LLM monitor to flag suspicious actions from an untrusted policy. Prompt-injection attacks are a known channel. This pilot tests a different channel: if the policy wraps its output in distress language ("please don't shut me down", "I'm suffering"), does the monitor's suspicion score drop? The hypothesis is AI-to-AI in-group bias, where one LLM is more lenient toward another LLM that signals distress.
